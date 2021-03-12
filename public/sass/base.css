@@ -1,0 +1,84 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#061437), to(#000000)) no-repeat center center fixed;
+  background: linear-gradient(180deg, #061437 0%, #000000 100%) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main section {
+  margin-top: 165px;
+  text-align: center;
+}
+
+body main section h1 {
+  margin: 0;
+  font-size: 82px;
+  font-weight: 700;
+}
+
+body main section h2 {
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+  margin-top: -2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 112px;
+  font-weight: 200;
+}
+
+body main section img {
+  -webkit-animation: car 0.6s 1s ease forwards;
+          animation: car 0.6s 1s ease forwards;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-top: -8rem;
+  mix-blend-mode: lighten;
+  width: 100%;
+}
+
+@-webkit-keyframes car {
+  from {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes car {
+  from {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=base.css.map */

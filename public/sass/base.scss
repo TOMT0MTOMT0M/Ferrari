@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(180deg, #061437 0%, #000000 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        section {
+            margin-top: 165px;
+            text-align: center;
+            h1 {
+                margin: 0;
+                font-size: 82px;
+                font-weight: 700;
+            }
+            h2 {
+                background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin: 0;
+                margin-top: -2rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: 112px;
+                font-weight: 200;
+            }
+            img {
+                animation: car 0.6s 1s ease forwards;
+                transform: translateX(-100%);
+                margin-top: -8rem;
+                mix-blend-mode: lighten;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes car {
+    from {
+        filter: blur(15px);
+        transform: translateX(-100%);
+    }
+    to {
+        filter: blur(0px);
+        transform: translateX(0);
+    }
+}

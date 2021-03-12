@@ -1,0 +1,149 @@
+nav {
+    margin: 50px 50px 0 50px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    .menu {
+        .after {
+            transition: all ease 3s;
+            width: 50px;
+            height: 50px;
+            background: rgb(255, 255, 255);
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            border-radius: 50%;
+            transform-origin: center;
+            z-index: 10;
+        }
+        .rond {
+            z-index: 11;
+            position: relative;
+            background: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            .barre1 {
+                transition: all 1s ease;
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: black;
+                top: 40%;
+                left: calc(50% - 10px);
+            }
+            .barre2 {
+                transition: all 1s ease;
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: black;
+                top: 60%;
+                left: calc(50% - 10px);
+            }
+        }
+    }
+    .logo {
+        width: 95px;
+        height: 20px;
+        img {
+            position: relative;
+            transition: all 3s ease;
+            z-index: 20;
+        }
+    }
+    .switch {
+        width: 32px;
+        height: 32px;
+        &:hover .on {
+            animation: light 1s ease 0s infinite;
+        }
+        .off {
+            position: relative;
+            svg {
+                width: 32px;
+                height: 32px;
+                transform: rotate(-43deg);
+                circle {
+                    transition: all 1s ease;
+                    stroke-dasharray: 1000px;
+                    stroke-dashoffset: 940px;
+                }
+            }
+            .on {
+                position: absolute;
+                top: 0;
+                svg {
+                    transform: rotate(0deg);
+                    rect {
+                        transform: translateX(0.5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes light {
+    0% {
+        opacity: 0.5
+    }
+    25% {
+        opacity: 0.2
+    }
+    50% {
+        opacity: 0.8
+    }
+    75% {
+        opacity: 1.2
+    }
+    100% {
+        opacity: 0.5
+    }
+}
+
+@keyframes off {
+    from {
+        stroke-dashoffset: 940px;
+    }
+    to {
+        stroke-dashoffset: 1000px;
+    }
+}
+
+@keyframes on {
+    from {
+        transform: scale(1) translateX(0.5px);
+        ;
+    }
+    to {
+        transform: scale(1.3) translateX(0.5px);
+        ;
+    }
+}
+
+.onActive {
+    animation: off 1s ease 0s forwards;
+}
+
+.onActive2 {
+    animation: on 1s ease 0s forwards;
+}
+
+.openMenu {
+    transform: scale(100);
+}
+
+.cross1 {
+    transform: translateY(4px) rotateZ(40deg);
+    transform-origin: center;
+}
+
+.cross2 {
+    transform: translateY(-5px) rotateZ(-40deg);
+    transform-origin: center;
+}
+
+.ferrari {
+    filter: brightness(0%);
+}

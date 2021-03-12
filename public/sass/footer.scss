@@ -1,0 +1,40 @@
+footer {
+    margin: 180px 172px 75px 172px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        transition: all 1s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            filter: contrast(0%);
+        }
+        p {
+            transition: all 1s ease;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        h3 {
+            margin-top: 14px;
+            margin-bottom: 8px;
+            opacity: 50%;
+            font-size: 18px;
+        }
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+.darken {
+    transition: all 0.5s ease;
+    filter: contrast(0%);
+    p {
+        opacity: 0;
+    }
+}

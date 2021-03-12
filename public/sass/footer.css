@@ -1,0 +1,67 @@
+footer {
+  margin: 180px 172px 75px 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div:hover {
+  -webkit-filter: contrast(0%);
+          filter: contrast(0%);
+}
+
+footer div p {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer div h3 {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  opacity: 50%;
+  font-size: 18px;
+}
+
+footer div img {
+  width: 48px;
+  height: 48px;
+}
+
+.darken {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: contrast(0%);
+          filter: contrast(0%);
+}
+
+.darken p {
+  opacity: 0;
+}
+/*# sourceMappingURL=footer.css.map */
